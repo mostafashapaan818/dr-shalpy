@@ -267,6 +267,30 @@
     letter-spacing: 0.05em; text-align: center;
     width: 100%;
   }
+  /* ── TABLE ──────────────────────────── */
+  .table-responsive {
+    width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;
+  }
+  .custom-table {
+    width: 100%; border-collapse: collapse; margin-top: 10px; min-width: 500px;
+  }
+  .custom-table th {
+    background: rgba(255,255,255,0.06); font-weight: 700; color: var(--white);
+    padding: 14px 20px; text-align: right; border-bottom: 2px solid var(--border);
+  }
+  .custom-table td {
+    padding: 14px 20px; border-bottom: 1px solid var(--border);
+    color: var(--muted); font-size: 15px; text-align: right;
+  }
+  .custom-table tr:last-child td { border-bottom: none; }
+  .custom-table th:nth-child(2), .custom-table td:nth-child(2),
+  .custom-table th:nth-child(3), .custom-table td:nth-child(3) {
+    text-align: center; font-family: 'Tajawal', sans-serif;
+  }
+  .table-desc {
+    font-size: 14px; color: var(--muted); line-height: 1.7;
+    margin-bottom: 24px;
+  }
 </style>
 </head>
 <body>
@@ -275,7 +299,7 @@
      SLIDE 1 — MARKET SIZE OVERVIEW
 ═══════════════════════════════════════ -->
 <div class="slide">
-  <div class="slide-num">01 / 04</div>
+  <div class="slide-num">01 / 06</div>
   <div class="slide-inner">
 
     <div class="slide-tag">تقرير التجارة الإلكترونية العالمية</div>
@@ -337,7 +361,7 @@
      SLIDE 2 — GROWTH & FORECAST
 ═══════════════════════════════════════ -->
 <div class="slide">
-  <div class="slide-num">02 / 04</div>
+  <div class="slide-num">02 / 06</div>
   <div class="slide-inner">
 
     <div class="slide-tag">معدلات النمو والتوقعات</div>
@@ -395,7 +419,7 @@
      SLIDE 3 — THREE KEY TOPICS
 ═══════════════════════════════════════ -->
 <div class="slide">
-  <div class="slide-num">03 / 04</div>
+  <div class="slide-num">03 / 06</div>
   <div class="slide-inner">
 
     <div class="slide-tag">المحاور الرئيسية للنقاش</div>
@@ -447,7 +471,7 @@
      SLIDE 4 — SUMMARY & INSIGHT
 ═══════════════════════════════════════ -->
 <div class="slide">
-  <div class="slide-num">04 / 04</div>
+  <div class="slide-num">04 / 06</div>
   <div class="slide-inner">
 
     <div class="slide-tag">الخلاصة والفرص المستقبلية</div>
@@ -487,6 +511,130 @@
     </div>
   </div>
 </div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 5 — MARKET EVOLUTION (2024-2027)
+═══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-num">05 / 06</div>
+  <div class="slide-inner">
+
+    <div class="slide-tag">التوقعات المستقبلية</div>
+    <div class="accent-line" style="background:linear-gradient(90deg,var(--blue),var(--white));"></div>
+    <div class="slide-title">تطور حجم السوق سنويًا (2024–2027)</div>
+    
+    <div class="table-desc">
+      في سياق إحصائيات التجارة الإلكترونية في الشرق الأوسط 2026، توضح هذه الأرقام أن السوق يمر بمرحلة توسع قوية، مع تباطؤ نسبي طبيعي في نسب النمو مع اقتراب السوق من النضج. من المتوقع أن يستقر معدل النمو تدريجيًا، لكنه يظل من أعلى المعدلات عالميًا.
+    </div>
+
+    <div class="table-responsive">
+      <table class="custom-table">
+      <thead>
+        <tr>
+          <th>السنة</th>
+          <th>حجم السوق (مليار دولار)</th>
+          <th>نسبة النمو السنوي</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2024</td>
+          <td>32</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>2025</td>
+          <td>40</td>
+          <td>25%</td>
+        </tr>
+        <tr>
+          <td>2026</td>
+          <td>45</td>
+          <td>12.5%</td>
+        </tr>
+        <tr>
+          <td>2027</td>
+          <td>50</td>
+          <td>11%</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SLIDE 6 — REGIONAL MARKET COMPARISON
+═══════════════════════════════════════ -->
+<div class="slide">
+  <div class="slide-num">06 / 06</div>
+  <div class="slide-inner">
+
+    <div class="slide-tag">نظرة إقليمية</div>
+    <div class="accent-line" style="background:linear-gradient(90deg,var(--blue),var(--green));"></div>
+    <div class="slide-title">مقارنة الأسواق الرئيسية (2026)</div>
+    
+    <div class="table-responsive">
+      <table class="custom-table" style="min-width: 650px;">
+        <thead>
+          <tr>
+            <th>الدولة</th>
+            <th>حجم السوق (مليار دولار)</th>
+            <th>نسبة الاختراق الرقمي</th>
+            <th>أبرز منتج إلكتروني / قطاع رئيسي</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>السعودية</td>
+            <td>12</td>
+            <td>75%</td>
+            <td>الإلكترونيات والعباءات</td>
+          </tr>
+          <tr>
+            <td>الإمارات</td>
+            <td>9</td>
+            <td>78%</td>
+            <td>الموضة والأزياء</td>
+          </tr>
+          <tr>
+            <td>مصر</td>
+            <td>8</td>
+            <td>55%</td>
+            <td>المنتجات الاستهلاكية</td>
+          </tr>
+          <tr>
+            <td>الكويت</td>
+            <td>1.95</td>
+            <td>65%</td>
+            <td>الإلكترونيات</td>
+          </tr>
+          <tr>
+            <td>الأردن</td>
+            <td>3.2</td>
+            <td>38%</td>
+            <td>التجارة الاجتماعية وخدمات التوصيل</td>
+          </tr>
+          <tr>
+            <td>المغرب</td>
+            <td>1.8</td>
+            <td>21.6%</td>
+            <td>الإلكترونيات والأزياء</td>
+          </tr>
+          <tr>
+            <td>العراق</td>
+            <td>1.2</td>
+            <td>62%</td>
+            <td>الإلكترونيات / متوسط الطلب ~265 دولار</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
 <div class="copyright">
   © 2026 Mostafa Shaaban. All Rights Reserved.
 </div>
