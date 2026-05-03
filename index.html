@@ -254,12 +254,18 @@
     .final-box { padding: 16px 20px; }
     .final-text { font-size: 14px; }
     .source-line { line-height: 1.5; }
+    .copyright { font-size: 11px; padding: 0 10px; }
   }
 
   /* ── PRINT ──────────────────────────── */
   @media print {
     body { background:#fff; padding:0; }
     .slide { break-inside: avoid; page-break-after: always; }
+  }
+  .copyright {
+    font-size: 13px; color: var(--muted); margin-top: 10px;
+    letter-spacing: 0.05em; text-align: center;
+    width: 100%;
   }
 </style>
 </head>
@@ -480,6 +486,9 @@
       المصادر: Statista · IMARC Group · Mordor Intelligence · EZDubai E-Commerce Report 2024 · P&S Intelligence
     </div>
   </div>
+</div>
+<div class="copyright">
+  © 2026 Mostafa Shaaban. All Rights Reserved.
 </div>
 
 </body>
