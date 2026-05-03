@@ -235,6 +235,27 @@
   /* ── DIVIDER ────────────────────────── */
   .h-divider { height:1px; background:var(--border); margin: 20px 0; }
 
+  /* ── RESPONSIVE DESIGN ──────────────── */
+  @media (max-width: 900px) {
+    .slide-inner { padding: 40px 30px; }
+    .metric-row, .growth-grid, .topics-grid, .summary-grid { grid-template-columns: repeat(2, 1fr); }
+    .slide-title { font-size: 28px; }
+  }
+  @media (max-width: 600px) {
+    body { padding: 20px 10px; gap: 20px; }
+    .slide-inner { padding: 40px 20px 20px; }
+    .slide-num { top: 15px; left: 20px; }
+    .slide-title { font-size: 22px; }
+    .slide-sub { font-size: 13px; margin-bottom: 24px; }
+    .metric-row, .growth-grid, .topics-grid, .summary-grid { grid-template-columns: 1fr; }
+    .mc-num, .gc-pct { font-size: 28px; }
+    .forecast-row { flex-wrap: wrap; justify-content: center; text-align: center; }
+    .fr-region { flex: 100%; margin-bottom: 4px; }
+    .final-box { padding: 16px 20px; }
+    .final-text { font-size: 14px; }
+    .source-line { line-height: 1.5; }
+  }
+
   /* ── PRINT ──────────────────────────── */
   @media print {
     body { background:#fff; padding:0; }
